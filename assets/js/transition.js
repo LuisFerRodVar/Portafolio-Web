@@ -17,14 +17,15 @@ const startTransition = () => {
 
 const onRouteClick = (route) => {
     if (appRoot.dataset.route === route) return;
-    
 	appRoot.dataset.route = route;
     endTransition();
+    
     let aside = document.querySelector(".layout__aside");
     aside.classList.remove("layout__aside--visible");
     if(route == 'a'){
         setTimeout(() => {
             window.location.href= "index.html"
+            
         }, 1300);
 
     }

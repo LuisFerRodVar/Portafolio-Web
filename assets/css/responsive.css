@@ -3,6 +3,7 @@
 }
 @media(max-width: 1490px){
     body{
+        overflow-x: hidden;
         padding: 0;
     }
     .layout{
