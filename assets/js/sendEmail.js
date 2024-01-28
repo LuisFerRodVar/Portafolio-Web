@@ -17,7 +17,7 @@ document.getElementById('form')
       Subject : formData.get('subject') + formData.get('name'),
       Body : formData.get('message') + 'email: ' + formData.get('email')
   }).then(
-    message =>  btn.value = 'Enviado'
+    message =>  console.log(message)
   );
     return false; // Agregar esta línea para evitar la recarga de la página
   });
