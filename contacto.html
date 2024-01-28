@@ -14,7 +14,8 @@
     <script src="assets/js/menu.js" defer></script>
     <script src="./assets/js/transition.js" defer></script>
     <script src="./assets/js/sendEmail.js" defer></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
    
 
@@ -153,24 +154,24 @@
                                     <div class="form__left">
                                         <div class="form__group">
                                             <input type="text" class="form__input" name="name" required
-                                                placeholder="Nombre" />
+                                                placeholder="Nombre" id="name" />
                                             <label for="name" class="form__label">Nombre</label>
                                         </div>
                                         <div class="form__group">
                                             <input type="email" class="form__input" name="email" required
-                                                placeholder="Email" />
+                                                placeholder="Email" id="email"/>
                                             <label for="email" class="form__label">Email</label>
                                         </div>
                                         <div class="form__group">
                                             <input type="text" class="form__input" name="subject" required
-                                                placeholder="Asunto" />
+                                                placeholder="Asunto" id="subject" />
                                             <label for="subject" class="form__label">Asunto</label>
                                         </div>
                                     </div>
                                     <div class="form__right">
                                         <div class="form__group form__group--textarea">
                                             <textarea class="form__input form__input--textarea" name="message" required
-                                                placeholder="Mensaje"></textarea>
+                                                placeholder="Mensaje" id="message"></textarea>
                                             <label for="message" class="form__label">Mensaje</label>
                                         </div>
 
