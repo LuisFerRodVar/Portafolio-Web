@@ -121,7 +121,7 @@
     }
     .layout__menu{
         position: static;
-        margin: 3rem o;
+        margin: 3rem 0;
     }
     .user-info__footer{
         position: static;
