@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <script src="assets/js/menu.js" defer></script>
     <script src="./assets/js/transition.js" defer></script>
+    <script src="./assets/js/sendEmail.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('_przHcqIZWUUWQgxg')
+    </script>
+
+
 </head>
 
 <body>
@@ -80,7 +88,7 @@
                                     <span class="menu__overlay">Contacto</span>
                                 </a>
                             </li>
-                           
+
 
                         </ul>
                     </nav>
@@ -143,7 +151,7 @@
                                     ¿Cómo puedo <span class="title__color">ayudarte?</span>
                                 </h3>
                             </header>
-                            <form class="contact__form" action="https://formsubmit.co/e44756565e9352ea6740bb6ed3fe43a9" method="POST">
+                            <form class="contact__form" id="form">
                                 <div class="form__container">
                                     <div class="form__left">
                                         <div class="form__group">
@@ -172,7 +180,7 @@
                                     </div>
 
                                 </div>
-                                <input type="submit" class="form__button" value="Enviar mensaje" />
+                                <input type="submit" id="formBtn" class="form__button" value="Enviar mensaje" />
                             </form>
 
                         </section>
