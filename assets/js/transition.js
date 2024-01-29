@@ -26,36 +26,36 @@ const onRouteClick = (route) => {
         setTimeout(() => {
             window.location.href= "index.html"
             
-        }, 1300);
+        }, 1000);
 
     }
     if(route == 'b'){
         setTimeout(() => {
             window.location.href= "sobre-mi.html"
-        }, 1300);
+        }, 1000);
     }
     if(route == 'c'){
         setTimeout(() => {
             window.location.href= "curriculum.html"
-        }, 1300);
+        }, 1000);
         
     }
     if(route == 'd'){
         setTimeout(() => {
             window.location.href= "portafolio.html"
-        }, 1300);
+        }, 1000);
         
     }
     if(route == 'e'){
         setTimeout(() => {
             window.location.href= "blog.html"
-        }, 1300);
+        }, 1000);
         
     }
     if(route == 'f'){
         setTimeout(() => {
             window.location.href= "contacto.html"
-        }, 1300);
+        }, 1000);
         
     }
 	

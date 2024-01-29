@@ -17,311 +17,388 @@
 
 <body>
     <!--Layout principal-->
-    <div class="background">
 
-        <div class="fondo">
 
-        </div>
 
-        <div class="layout">
-            <!--Barra lateral-->
-            <aside class="layout__aside">
-                <section class="aside__user-info">
-                    <!--Informacion general-->
-                    <div class="user-info__general">
-                        <div class="user-info__container-image">
-                            <img src="assets/img/default-user.jpg" class="user-info__image"
-                                alt="Foto de perfil del usuario" />
-                        </div>
-                        <h2 class="user-info__name">Luis Rodríguez</h2>
-                        <h4 class="user-info__job">Desarrollador fulstack</h4>
+    <div class="layout">
+        <!--Barra lateral-->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                <!--Informacion general-->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="assets/img/default-user.jpg" class="user-info__image"
+                            alt="Foto de perfil del usuario" />
                     </div>
-                    <!--Menu de navegacion-->
-                    <nav class="layout__menu">
-                        <ul class="menu__list">
-                            <li class="menu__option">
-                                <a href="index.html" class="menu__link--1 a menu__link"
-                                    onclick="onRouteClick('a'); return false;">
-                                    <i class="fa-solid fa-home"></i>
-                                    <span class="menu__overlay">Inicio</span>
-                                </a>
-                            </li>
-                            <li class="menu__option">
-                                <a href="sobre-mi.html" class="menu__link b menu__link--2"
-                                    onclick="onRouteClick('b'); return false;">
-                                    <i class="fa-solid fa-user"></i>
-                                    <span class="menu__overlay">Sobre mi</span>
-                                </a>
-                            </li>
-                            <li class="menu__option">
-                                <a class="menu__link c menu__link--3 menu__link--active">
-                                    <i class="fa-solid fa-graduation-cap"></i>
-                                    <span class="menu__overlay">Curriculum</span>
-                                </a>
-                            </li>
-                            <li class="menu__option">
-                                <a href="portafolio.html" class="menu__link d menu__link--4"
-                                    onclick="onRouteClick('d'); return false;">
-                                    <i class="fa-solid fa-briefcase"></i>
-                                    <span class="menu__overlay">Portafolio</span>
-                                </a>
-                            </li>
-                            <li class="menu__option">
-                                <a href="blog.html" class="menu__link e menu__link--5"
-                                    onclick="onRouteClick('e'); return false;">
-                                    <i class="fa-solid fa-book"></i>
-                                    <span class="menu__overlay">Blog</span>
-                                </a>
-                            </li>
-                            <li class="menu__option">
-                                <a href="contacto.html" class="menu__link f menu__link--6"
-                                    onclick="onRouteClick('f'); return false;">
-                                    <i class="fa-solid fa-envelope"></i>
-                                    <span class="menu__overlay">Contacto</span>
-                                </a>
-                            </li>
-                            
-
-                        </ul>
-                    </nav>
-                    <div class="user-info__user-link">
-                        <ul class="user-link__social">
-                            <li class="social__option">
-                                <a href="https://www.linkedin.com/in/luis-fernando-rodr%C3%ADguez-vargas-449221279/"
-                                    class="social__link">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li class="social__option">
-                                <a href="https://github.com/LuisFerRodVar" class="social__link">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="user-info__buttons">
-                        <a href="#" class="user-info__btn">Descargar CV</a>
-                    </div>
-
-                    <footer class="user-info__footer">
-                        &copy; 2024
-                    </footer>
-                </section>
-            </aside>
-            <div class="layout__menu-toggle">
-                <i class="menu__toggle-icon fa-solid fa-bars"></i>
-                <i class="menu__toggle-icon fa-solid fa-xmark"></i>
-            </div>
-            <main class="layout__content" id="page">
-                <div class="loader">
-                    <span class="loader__book"></span>
+                    <h2 class="user-info__name">Luis Rodríguez</h2>
+                    <h4 class="user-info__job">Desarrollador fulstack</h4>
                 </div>
-                <section class="content__page content__resume">
-                    <header class="resume__header">
-                        <h1 class="resume__title">Curriculum</h1>
-                    </header>
-                    <div class="resume__container">
-                        <section class="resume__left">
-                            <header class="resume__subheader">
-                                <h2 class="resume__subtitle">
-                                    Formación
-                                </h2>
-                            </header>
-                            <div class="resume__timelines">
-                                <article class="timelines__item">
-                                    <header class="timeline__header">
-                                        <h4 class="timeline__year">2018 - 2019</h4>
-                                        <span class="timeline__company">Tecnológico de Costa Rica</span>
-                                    </header>
-                                    <div class="timeline__divider">
-
-                                    </div>
-                                    <div class="timeline__description">
-                                        <h3 class="timeline__title">Ingeniería en computación</h3>
-                                        <p class="timeline__text">
-                                        </p>
-                                    </div>
-                                </article>
-                                <article class="timelines__item">
-                                    <header class="timeline__header">
-                                        <h4 class="timeline__year">2021 - 2024</h4>
-                                        <span class="timeline__company">Universidad de Costa Rica</span>
-                                    </header>
-                                    <div class="timeline__divider">
-
-                                    </div>
-                                    <div class="timeline__description">
-                                        <h3 class="timeline__title">Informática empresarial</h3>
-                                        <p class="timeline__text">
-                                        </p>
-                                    </div>
-                                </article>
-
-
-                            </div>
-                            <header class="resume__subheader">
-                                <h2 class="resume__subtitle">
-                                    Experiencia
-                                </h2>
-                            </header>
-                            <div class="resume__timelines">
-                                <article class="timelines__item">
-                                    <header class="timeline__header">
-                                        <h4 class="timeline__year">2020</h4>
-                                        <span class="timeline__company">Freelance</span>
-                                    </header>
-                                    <div class="timeline__divider">
-
-                                    </div>
-                                    <div class="timeline__description">
-                                        <h3 class="timeline__title">Desarrollador freelance</h3>
-                                        <p class="timeline__text">
-
-                                        </p>
-                                    </div>
-                                </article>
+                <!--Menu de navegacion-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link--1 a menu__link"
+                                onclick="onRouteClick('a'); return false;">
+                                <i class="fa-solid fa-home"></i>
+                                <span class="menu__overlay">Inicio</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link b menu__link--2"
+                                onclick="onRouteClick('b'); return false;">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mi</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a class="menu__link c menu__link--3 menu__link--active">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Curriculum</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link d menu__link--4"
+                                onclick="onRouteClick('d'); return false;">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="blog.html" class="menu__link e menu__link--5"
+                                onclick="onRouteClick('e'); return false;">
+                                <i class="fa-solid fa-book"></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link f menu__link--6"
+                                onclick="onRouteClick('f'); return false;">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
 
 
+                    </ul>
+                </nav>
+                <div class="user-info__user-link">
+                    <ul class="user-link__social">
+                        <li class="social__option">
+                            <a href="https://www.linkedin.com/in/luis-fernando-rodr%C3%ADguez-vargas-449221279/"
+                                class="social__link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="https://github.com/LuisFerRodVar" class="social__link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-info__buttons">
+                    <a href="#" class="user-info__btn">Descargar CV</a>
+                </div>
 
-                            </div>
-                            <header class="resume__subheader">
-                                <h2 class="resume__subtitle">
-                                    Habilidades
-                                </h2>
-                            </header>
-                            <div class="resume__knowledges">
-                                <ul class="knowledges__list">
-                                    <li class="knowledges__option">Desarrollo web fullstack</li>
-                                    <li class="knowledges__option">Desarrollo móvil</li>
-                                    <li class="knowledges__option">Desarrollo de videojuegos</li>
-                                    <li class="knowledges__option">Bases de datos</li>
-                                    <li class="knowledges__option">Resolución de problemas</li>
-                                    <li class="knowledges__option">Adaptabilidad</li>
-                                    <li class="knowledges__option">Independencia</li>
-                                    <li class="knowledges__option">Trabajo bajo presión</li>
-                                    <li class="knowledges__option">Velocidad</li>
-                                </ul>
-                            </div>
-
-                        </section>
-                        <section class="resume__right">
-                            <header class="resume__subheader">
-                                <h2 class="resume__subtitle">
-                                    Dominio de tecnologías <span class="title__color">Front End</span>
-                                </h2>
-                            </header>
-                            <div class="resume__skills">
-                                <article class="skills__title">
-                                    <h4 class="skills__text">React</h4>
-                                    <span class="skills__number">90%</span>
-                                </article>
-                                <div class="skills__progressbar">
-                                    <div class="skills__porcentage skills__porcentage--p1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="resume__skills">
-                                <article class="skills__title">
-                                    <h4 class="skills__text">Angular</h4>
-                                    <span class="skills__number">80%</span>
-                                </article>
-                                <div class="skills__progressbar">
-                                    <div class="skills__porcentage skills__porcentage--p2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="resume__skills">
-                                <article class="skills__title">
-                                    <h4 class="skills__text">CSS3</h4>
-                                    <span class="skills__number">100%</span>
-                                </article>
-                                <div class="skills__progressbar">
-                                    <div class="skills__porcentage skills__porcentage--p3">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="resume__skills">
-                                <article class="skills__title">
-                                    <h4 class="skills__text">HTML5</h4>
-                                    <span class="skills__number">100%</span>
-                                </article>
-                                <div class="skills__progressbar">
-                                    <div class="skills__porcentage skills__porcentage--p3">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="resume__skills">
-                                <article class="skills__title">
-                                    <h4 class="skills__text">Javascript</h4>
-                                    <span class="skills__number">90%</span>
-                                </article>
-                                <div class="skills__progressbar">
-                                    <div class="skills__porcentage skills__porcentage--p1">
-                                    </div>
-                                </div>
-                            </div>
-                            <header class="resume__subheader">
-                                <h2 class="resume__subtitle">
-                                    Dominio de frameworks <span class="title__color">Back End</span>
-                                </h2>
-                            </header>
-                            <div class="resume__skills">
-                                <article class="skills__title">
-                                    <h4 class="skills__text">C#/ASP.net</h4>
-                                    <span class="skills__number">100%</span>
-                                </article>
-                                <div class="skills__progressbar">
-                                    <div class="skills__porcentage skills__porcentage--p3">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="resume__skills">
-                                <article class="skills__title">
-                                    <h4 class="skills__text">Python/Django</h4>
-                                    <span class="skills__number">95%</span>
-                                </article>
-                                <div class="skills__progressbar">
-                                    <div class="skills__porcentage skills__porcentage--p4">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="resume__skills">
-                                <article class="skills__title">
-                                    <h4 class="skills__text">Java/SpringBoot</h4>
-                                    <span class="skills__number">100%</span>
-                                </article>
-                                <div class="skills__progressbar">
-                                    <div class="skills__porcentage skills__porcentage--p3">
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </section>
-                    </div>
-                    <div class="resume__certificates">
+                <footer class="user-info__footer">
+                    &copy; 2024
+                </footer>
+            </section>
+        </aside>
+        <div class="layout__menu-toggle">
+            <i class="menu__toggle-icon fa-solid fa-bars"></i>
+            <i class="menu__toggle-icon fa-solid fa-xmark"></i>
+        </div>
+        <main class="layout__content" id="page">
+            <div class="loader">
+                <span class="loader__book"></span>
+            </div>
+            <section class="content__page content__resume">
+                <header class="resume__header">
+                    <h1 class="resume__title">Curriculum</h1>
+                </header>
+                <div class="resume__container">
+                    <section class="resume__left">
                         <header class="resume__subheader">
                             <h2 class="resume__subtitle">
-                                Certificados
+                                Formación
                             </h2>
                         </header>
-                        <div class="certificates__container">
-                            <article class="certificates__certificate">
-                                <a href="https://www.udemy.com/certificate/UC-69cfb585-98b5-4bbf-a1c2-83ef2d3ef2cb/"
-                                    target="blank" class="certifcate__link">
-                                    <div class="certificate__logo">
-                                        <img src="assets/img/certificado-1.png" class="certificate__image" />
+                        <div class="resume__timelines">
+                            <article class="timelines__item">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2018 - 2019</h4>
+                                    <span class="timeline__company">Tecnológico de Costa Rica</span>
+                                </header>
+                                <div class="timeline__divider">
 
-                                    </div>
-                                    <div class="certificate__content">
-                                        <h4 class="certificate__title">Desarrollo web full stack: C# + ASP.NET +
-                                            React + SqlServer</h4>
-                                        <span class="certificate__id">UC-69cfb585-98b5-4bbf-a1c2-83ef2d3ef2cb</span>
-                                        <span class="certificate__date">30 de noviembre 2023</span>
-                                    </div>
-                                </a>
+                                </div>
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Ingeniería en computación</h3>
+                                    <p class="timeline__text">
+                                    </p>
+                                </div>
                             </article>
-                            <!--
+                            <article class="timelines__item">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2021 - 2024</h4>
+                                    <span class="timeline__company">Universidad de Costa Rica</span>
+                                </header>
+                                <div class="timeline__divider">
+
+                                </div>
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Informática empresarial</h3>
+                                    <p class="timeline__text">
+                                    </p>
+                                </div>
+                            </article>
+
+
+                        </div>
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">
+                                Experiencia
+                            </h2>
+                        </header>
+                        <div class="resume__timelines">
+                            <article class="timelines__item">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2020</h4>
+                                    <span class="timeline__company">Freelance</span>
+                                </header>
+                                <div class="timeline__divider">
+
+                                </div>
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Desarrollador freelance</h3>
+                                    <p class="timeline__text">
+
+                                    </p>
+                                </div>
+                            </article>
+
+
+
+                        </div>
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">
+                                Habilidades
+                            </h2>
+                        </header>
+                        <div class="resume__knowledges">
+                            <ul class="knowledges__list">
+                                <li class="knowledges__option">Desarrollo web fullstack</li>
+                                <li class="knowledges__option">Desarrollo móvil</li>
+                                <li class="knowledges__option">Desarrollo de videojuegos</li>
+                                <li class="knowledges__option">Bases de datos</li>
+                                <li class="knowledges__option">Resolución de problemas</li>
+                                <li class="knowledges__option">Adaptabilidad</li>
+                                <li class="knowledges__option">Independencia</li>
+                                <li class="knowledges__option">Trabajo bajo presión</li>
+                                <li class="knowledges__option">Velocidad</li>
+                            </ul>
+                        </div>
+
+                    </section>
+                    <section class="resume__right">
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">
+                                Dominio de tecnologías <span class="title__color">Front End</span>
+                            </h2>
+                        </header>
+                        <div class="resume__skills">
+                            <article class="skills__title">
+                                <h4 class="skills__text">React</h4>
+                                <span class="skills__number">90%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__porcentage skills__porcentage--p1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume__skills">
+                            <article class="skills__title">
+                                <h4 class="skills__text">Angular</h4>
+                                <span class="skills__number">80%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__porcentage skills__porcentage--p2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume__skills">
+                            <article class="skills__title">
+                                <h4 class="skills__text">CSS3</h4>
+                                <span class="skills__number">100%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__porcentage skills__porcentage--p3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume__skills">
+                            <article class="skills__title">
+                                <h4 class="skills__text">HTML5</h4>
+                                <span class="skills__number">100%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__porcentage skills__porcentage--p3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume__skills">
+                            <article class="skills__title">
+                                <h4 class="skills__text">Javascript</h4>
+                                <span class="skills__number">90%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__porcentage skills__porcentage--p1">
+                                </div>
+                            </div>
+                        </div>
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">
+                                Dominio de frameworks <span class="title__color">Back End</span>
+                            </h2>
+                        </header>
+                        <div class="resume__skills">
+                            <article class="skills__title">
+                                <h4 class="skills__text">C#/ASP.net</h4>
+                                <span class="skills__number">100%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__porcentage skills__porcentage--p3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume__skills">
+                            <article class="skills__title">
+                                <h4 class="skills__text">Python/Django</h4>
+                                <span class="skills__number">95%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__porcentage skills__porcentage--p4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume__skills">
+                            <article class="skills__title">
+                                <h4 class="skills__text">Java/SpringBoot</h4>
+                                <span class="skills__number">100%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__porcentage skills__porcentage--p3">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+                </div>
+                <div class="resume__certificates">
+                    <header class="resume__subheader">
+                        <h2 class="resume__subtitle">
+                            Certificados
+                        </h2>
+                    </header>
+                    <div class="container">
+                        <div class="carousel">
+                            <input type="radio" name="slides" checked="checked" id="slide-1">
+                            <input type="radio" name="slides" id="slide-2">
+                            <input type="radio" name="slides" id="slide-3">
+                            <input type="radio" name="slides" id="slide-4">
+                            <input type="radio" name="slides" id="slide-5">
+                            <input type="radio" name="slides" id="slide-6">
+                            <ul class="carousel__slides">
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="./assets/img/certificate1.jpg">
+                                        </div>
+                                        <figcaption>
+                                            Desarrollo web full stack: C# + ASP.NET +
+                                            React + SqlServer
+                                            <span class="credit">30 de noviembre de 2023</span>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="./assets/img/certificate2.jpg" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Academic Process Mining Fundamentals
+                                            <span class="credit">13 de octubre de 2023</span>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="./assets/img/certificate4.jpg" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Endpoint Security
+                                            <span class="credit">25 de noviembre de 2023</span>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="./assets/img/certificate3.jpg" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Cyber Threat Management
+                                            <span class="credit">26 de noviembre de 2023</span>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                              
+                            </ul>
+                            <ul class="carousel__thumbnails">
+                                <li>
+                                    <label for="slide-1"><img class="certificate__thumbnail-img"
+                                            src="./assets/img/certificado-1.png" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-2"><img class="certificate__thumbnail-img"
+                                            src="./assets/img/certificado-2.png" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-3"><img class="certificate__thumbnail-img"
+                                            src="./assets/img/certificado-3.svg" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-4"><img class="certificate__thumbnail-img"
+                                            src="./assets/img/certificado-3.svg" alt=""></label>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <div class="certificates__container">
+                        <article class="certificates__certificate">
+                            <a href="https://www.udemy.com/certificate/UC-69cfb585-98b5-4bbf-a1c2-83ef2d3ef2cb/"
+                                target="blank" class="certifcate__link">
+                                <div class="certificate__logo">
+                                    <img src="assets/img/certificado-1.png" class="certificate__image" />
+
+                                </div>
+                                <div class="certificate__content">
+                                    <h4 class="certificate__title">Desarrollo web full stack: C# + ASP.NET +
+                                        React + SqlServer</h4>
+                                    <span class="certificate__id">UC-69cfb585-98b5-4bbf-a1c2-83ef2d3ef2cb</span>
+                                    <span class="certificate__date">30 de noviembre 2023</span>
+                                </div>
+                            </a>
+                        </article> -->
+                <!--
                             <article class="certificates__certificate">
                                 <a href="#" target="blank" class="certifcate__link">
                                     <div class="certificate__logo">
@@ -407,58 +484,58 @@
                                 </a>
                             </article>
                         -->
-                            <article class="certificates__certificate">
-                                <a href="https://www.credly.com/badges/e1204d6c-9cb1-4842-b425-3d2b1d986a9b/public_url"
-                                    target="blank" class="certifcate__link">
-                                    <div class="certificate__logo">
-                                        <img src="assets/img/certificado-2.png" class="certificate__image" />
+                <!-- <article class="certificates__certificate">
+                            <a href="https://www.credly.com/badges/e1204d6c-9cb1-4842-b425-3d2b1d986a9b/public_url"
+                                target="blank" class="certifcate__link">
+                                <div class="certificate__logo">
+                                    <img src="assets/img/certificado-2.png" class="certificate__image" />
 
-                                    </div>
-                                    <div class="certificate__content">
-                                        <h4 class="certificate__title">Academic Process Mining Fundamentals</h4>
-                                        <span class="certificate__id">e1204d6c-9cb1-4842-b425-3d2b1d986a9b</span>
-                                        <span class="certificate__date">23 de enero 2024</span>
-                                    </div>
-                                </a>
-                            </article>
-                            <article class="certificates__certificate">
-                                <a href="https://www.credly.com/badges/8bcc23e9-e96e-40a2-acae-d5b7a4b644c9/public_url"
-                                    target="blank" class="certifcate__link">
-                                    <div class="certificate__logo">
-                                        <img src="assets/img/certificado-3.svg" class="certificate__image" />
+                                </div>
+                                <div class="certificate__content">
+                                    <h4 class="certificate__title">Academic Process Mining Fundamentals</h4>
+                                    <span class="certificate__id">e1204d6c-9cb1-4842-b425-3d2b1d986a9b</span>
+                                    <span class="certificate__date">23 de enero 2024</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="certificates__certificate">
+                            <a href="https://www.credly.com/badges/8bcc23e9-e96e-40a2-acae-d5b7a4b644c9/public_url"
+                                target="blank" class="certifcate__link">
+                                <div class="certificate__logo">
+                                    <img src="assets/img/certificado-3.svg" class="certificate__image" />
 
-                                    </div>
-                                    <div class="certificate__content">
-                                        <h4 class="certificate__title">Cyber Threat Management</h4>
-                                        <span class="certificate__id">8bcc23e9-e96e-40a2-acae-d5b7a4b644c9</span>
-                                        <span class="certificate__date">23 de enero 2024</span>
-                                    </div>
-                                </a>
-                            </article>
-                            <article class="certificates__certificate">
-                                <a href="https://www.credly.com/badges/096c5550-8dfd-49f1-ae52-d4788036206a/public_url"
-                                    target="blank" class="certifcate__link">
-                                    <div class="certificate__logo">
-                                        <img src="assets/img/certificado-3.svg" class="certificate__image" />
+                                </div>
+                                <div class="certificate__content">
+                                    <h4 class="certificate__title">Cyber Threat Management</h4>
+                                    <span class="certificate__id">8bcc23e9-e96e-40a2-acae-d5b7a4b644c9</span>
+                                    <span class="certificate__date">23 de enero 2024</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="certificates__certificate">
+                            <a href="https://www.credly.com/badges/096c5550-8dfd-49f1-ae52-d4788036206a/public_url"
+                                target="blank" class="certifcate__link">
+                                <div class="certificate__logo">
+                                    <img src="assets/img/certificado-3.svg" class="certificate__image" />
 
-                                    </div>
-                                    <div class="certificate__content">
-                                        <h4 class="certificate__title">Endpoint Security</h4>
-                                        <span class="certificate__id">096c5550-8dfd-49f1-ae52-d4788036206a</span>
-                                        <span class="certificate__date">23 de enero 2024</span>
-                                    </div>
-                                </a>
-                            </article>
+                                </div>
+                                <div class="certificate__content">
+                                    <h4 class="certificate__title">Endpoint Security</h4>
+                                    <span class="certificate__id">096c5550-8dfd-49f1-ae52-d4788036206a</span>
+                                    <span class="certificate__date">23 de enero 2024</span>
+                                </div>
+                            </a>
+                        </article> -->
+                <!-- 
+                    </div> -->
 
-                        </div>
-                    
-                    </div>
-                </section>
-            </main>
-
-
-        </div>
     </div>
+    </section>
+    </main>
+
+
+    </div>
+
 </body>
 
 </html>
