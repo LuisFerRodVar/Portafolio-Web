@@ -26,6 +26,10 @@
     }
 }
 @media(max-width: 1060px){
+    .menu__overlay{
+        background-color: transparent;
+    }
+    
     .loader{
         transform: translateX(0%);
     }
@@ -108,6 +112,9 @@
         grid-template-areas: 'content';
         grid-template-columns: 100%;
     }
+    .menu__icon{
+        display: none;
+    }
     .layout__content{
         width: 100%;
         border-radius: 0;
@@ -128,7 +135,7 @@
         padding-bottom: 2rem;
     }
     .menu__list{
-        background-color: var(--color_secundario);
+        background-color: transparent;
         box-shadow: none;
         margin-left: 0;
         width: 100%;

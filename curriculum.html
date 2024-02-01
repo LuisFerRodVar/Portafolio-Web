@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="./assets/css/scroll.css" />
     <link rel="stylesheet" href="./assets/fonts/poppins/poppins.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="assets/js/menu.js" defer></script>
     <script src="./assets/js/transition.js" defer></script>
+
 </head>
 
 <body>
@@ -27,7 +29,7 @@
                 <!--Informacion general-->
                 <div class="user-info__general">
                     <div class="user-info__container-image">
-                        <img src="assets/img/default-user.jpg" class="user-info__image"
+                        <img src="assets/img/default-user.jpeg" class="user-info__image"
                             alt="Foto de perfil del usuario" />
                     </div>
                     <h2 class="user-info__name">Luis Rodríguez</h2>
@@ -37,47 +39,45 @@
                 <nav class="layout__menu">
                     <ul class="menu__list">
                         <li class="menu__option">
-                            <a href="index.html" class="menu__link--1 a menu__link"
-                                onclick="onRouteClick('a'); return false;">
-                                <i class="fa-solid fa-home"></i>
+                            <a class="menu__link--1 a menu__link" onclick="onRouteClick('a'); return false;">
+                                <ion-icon class="menu__icon" name="home-outline"></ion-icon>
                                 <span class="menu__overlay">Inicio</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="sobre-mi.html" class="menu__link b menu__link--2"
                                 onclick="onRouteClick('b'); return false;">
-                                <i class="fa-solid fa-user"></i>
+                                <ion-icon class="menu__icon" name="person-outline"></ion-icon>
                                 <span class="menu__overlay">Sobre mi</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a class="menu__link c menu__link--3 menu__link--active">
-                                <i class="fa-solid fa-graduation-cap"></i>
+                                <ion-icon class="menu__icon" name="school"></ion-icon>
                                 <span class="menu__overlay">Curriculum</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="portafolio.html" class="menu__link d menu__link--4"
                                 onclick="onRouteClick('d'); return false;">
-                                <i class="fa-solid fa-briefcase"></i>
+                                <ion-icon class="menu__icon" name="briefcase-outline"></ion-icon>
                                 <span class="menu__overlay">Portafolio</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="blog.html" class="menu__link e menu__link--5"
                                 onclick="onRouteClick('e'); return false;">
-                                <i class="fa-solid fa-book"></i>
+                                <ion-icon class="menu__icon" name="newspaper-outline"></ion-icon>
                                 <span class="menu__overlay">Blog</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="contacto.html" class="menu__link f menu__link--6"
                                 onclick="onRouteClick('f'); return false;">
-                                <i class="fa-solid fa-envelope"></i>
+                                <ion-icon class="menu__icon" name="mail-outline"></ion-icon>
                                 <span class="menu__overlay">Contacto</span>
                             </a>
                         </li>
-
 
                     </ul>
                 </nav>
@@ -191,18 +191,69 @@
                                 <li class="knowledges__option">Desarrollo web fullstack</li>
                                 <li class="knowledges__option">Desarrollo móvil</li>
                                 <li class="knowledges__option">Desarrollo de videojuegos</li>
-                                <li class="knowledges__option">Bases de datos</li>
                                 <li class="knowledges__option">Resolución de problemas</li>
+                           
+                                <li class="knowledges__option">Bases de datos</li>
+                                <li class="knowledges__option">Ciberseguridad</li>
+                                <li class="knowledges__option">Desarrollo de APIs</li>
+                                <li class="knowledges__option">Gestión de proyectos</li>
                                 <li class="knowledges__option">Adaptabilidad</li>
                                 <li class="knowledges__option">Independencia</li>
                                 <li class="knowledges__option">Trabajo bajo presión</li>
                                 <li class="knowledges__option">Velocidad</li>
+                                
+
+
                             </ul>
                         </div>
 
                     </section>
                     <section class="resume__right">
-                        <header class="resume__subheader">
+                        <div class="resume__tecnologies">
+                            <header class="resume__subheader">
+                                <h2 class="resume__subtitle">
+                                    Dominio de tecnologías <span class="title__color">Front End</span>
+                                </h2>
+                                <ul class="tecnologies__list">
+                                    <li class="tecnologies__item"><i class="tecnologies__icon devicon-html5-plain"></i><p class="tecnologies__text">HTML5</p></li>
+                                    <li class="tecnologies__item"><i class="devicon-css3-plain tecnologies__icon"></i><p class="tecnologies__text">CSS3</p></i></li>
+                                    <li class="tecnologies__item"><i class="devicon-javascript-plain tecnologies__icon"></i><p class="tecnologies__text">Javascript</p></i></li>
+                                    <li class="tecnologies__item"><i class="devicon-react-original tecnologies__icon"></i><p class="tecnologies__text">React</p></i></li>
+                                    <li class="tecnologies__item"><i class="devicon-angularjs-plain tecnologies__icon"></i><p class="tecnologies__text">Angular</p></i></li>
+                                    
+                                </ul>
+                            </header>
+                        </div>
+                        <div class="resume__tecnologies">
+                            <header class="resume__subheader">
+                                <h2 class="resume__subtitle">
+                                    Dominio de frameworks <span class="title__color">Back End</span>
+                                </h2>
+                                <ul class="tecnologies__list">
+                                    <li class="tecnologies__item"><i class="devicon-dotnetcore-plain tecnologies__icon"></i><p class="tecnologies__text">.NET Core</p></li>
+                                    <li class="tecnologies__item"><i class="devicon-django-plain tecnologies__icon"></i><p class="tecnologies__text">Django</p></i></li>
+                                    <li class="tecnologies__item"><i class="devicon-spring-plain tecnologies__icon"></i><p class="tecnologies__text">Spring</p></i></li>
+                                    <li class="tecnologies__item"><i class="devicon-express-original tecnologies__icon"></i><p class="tecnologies__text">Express.js</p></i></li>
+                                    
+                                </ul>
+                            </header>
+                        </div>
+                        <div class="resume__tecnologies">
+                            <header class="resume__subheader">
+                                <h2 class="resume__subtitle">
+                                    Dominio de bases de <span class="title__color">Datos</span>
+                                </h2>
+                                <ul class="tecnologies__list">
+                                    <li class="tecnologies__item"><i class="devicon-microsoftsqlserver-plain tecnologies__icon"></i><p class="tecnologies__text">SQL Server</p></li>
+                                    <li class="tecnologies__item"><i class="devicon-postgresql-plain tecnologies__icon"></i><p class="tecnologies__text">PostgreSQL</p></i></li>
+                                    <li class="tecnologies__item"><i class="devicon-firebase-plain tecnologies__icon"></i><p class="tecnologies__text">Firebase</p></i></li>
+                                    <li class="tecnologies__item"><i class="devicon-mongodb-plain tecnologies__icon"></i><p class="tecnologies__text">MongoDB</p></i></li>
+                                    
+                                </ul>
+                            </header>
+                        </div>
+
+                        <!-- <header class="resume__subheader">
                             <h2 class="resume__subtitle">
                                 Dominio de tecnologías <span class="title__color">Front End</span>
                             </h2>
@@ -291,7 +342,7 @@
                                 <div class="skills__porcentage skills__porcentage--p3">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
 
                     </section>
@@ -356,7 +407,7 @@
                                         </figcaption>
                                     </figure>
                                 </li>
-                              
+
                             </ul>
                             <ul class="carousel__thumbnails">
                                 <li>
@@ -375,7 +426,7 @@
                                     <label for="slide-4"><img class="certificate__thumbnail-img"
                                             src="./assets/img/certificado-3.svg" alt=""></label>
                                 </li>
-                               
+
                             </ul>
                         </div>
                     </div>
@@ -535,7 +586,8 @@
 
 
     </div>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

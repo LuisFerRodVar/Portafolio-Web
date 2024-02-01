@@ -1,4 +1,4 @@
-consoleText(['Desarrollador Full-Stack', 'Desarrollador Front-End', 'Desarrollador Back-End','Desarrollador Móvil','Desarrollador de Videojuegos'], 'text',[]);
+consoleText([' Full-Stack', ' Front-End', ' Back-End',' Móvil'], 'text',[]);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#888'];

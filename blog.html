@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <script src="assets/js/menu.js" defer></script>
     <script src="./assets/js/transition.js" defer></script>
+
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                 <!--Informacion general-->
                 <div class="user-info__general">
                     <div class="user-info__container-image">
-                        <img src="assets/img/default-user.jpg" class="user-info__image"
+                        <img src="assets/img/default-user.jpeg" class="user-info__image"
                             alt="Foto de perfil del usuario" />
                     </div>
                     <h2 class="user-info__name">Luis Rodríguez</h2>
@@ -38,43 +39,42 @@
                 <nav class="layout__menu">
                     <ul class="menu__list">
                         <li class="menu__option">
-                            <a href="index.html" class="menu__link--1 a menu__link"
-                                onclick="onRouteClick('a'); return false;">
-                                <i class="fa-solid fa-home"></i>
+                            <a class="menu__link--1 a menu__link" onclick="onRouteClick('a'); return false;">
+                                <ion-icon class="menu__icon" name="home-outline"></ion-icon>
                                 <span class="menu__overlay">Inicio</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="sobre-mi.html" class="menu__link b menu__link--2"
                                 onclick="onRouteClick('b'); return false;">
-                                <i class="fa-solid fa-user"></i>
+                                <ion-icon class="menu__icon" name="person-outline"></ion-icon>
                                 <span class="menu__overlay">Sobre mi</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="curriculum.html" class="menu__link c menu__link--3"
                                 onclick="onRouteClick('c'); return false;">
-                                <i class="fa-solid fa-graduation-cap"></i>
+                                <ion-icon class="menu__icon" name="school-outline"></ion-icon>
                                 <span class="menu__overlay">Curriculum</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="portafolio.html" class="menu__link d menu__link--4"
                                 onclick="onRouteClick('d'); return false;">
-                                <i class="fa-solid fa-briefcase"></i>
+                                <ion-icon class="menu__icon" name="briefcase-outline"></ion-icon>
                                 <span class="menu__overlay">Portafolio</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a class="menu__link e menu__link--5 menu__link--active">
-                                <i class="fa-solid fa-book"></i>
+                                <ion-icon class="menu__icon" name="newspaper"></ion-icon>
                                 <span class="menu__overlay">Blog</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="contacto.html" class="menu__link f menu__link--6"
                                 onclick="onRouteClick('f'); return false;">
-                                <i class="fa-solid fa-envelope"></i>
+                                <ion-icon class="menu__icon" name="mail-outline"></ion-icon>
                                 <span class="menu__overlay">Contacto</span>
                             </a>
                         </li>
@@ -151,6 +151,8 @@
 
     </div>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
