@@ -35,6 +35,6 @@ function showMask(element, destiny) {
         setTimeout(() =>{
             
             window.location.href = 'prueba.html'
-        },1000)
+        },500)
     }
 }

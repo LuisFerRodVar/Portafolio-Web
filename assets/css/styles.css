@@ -19,7 +19,6 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -371,8 +370,7 @@ h5 {
 .portafolio__header,
 .blog__header,
 .contact__header,
-.form-header__subtitle,
-.article__header {
+.form-header__subtitle {
     margin-bottom: 4.5rem;
     transition: all 150ms ease-in-out;
     display: inline-block;
@@ -383,8 +381,7 @@ h5 {
 .resume__title,
 .portafolio__title,
 .blog__title,
-.contact__title,
-.article__title{
+.contact__title{
     font-size: 3.2rem;
     position: relative;
 
@@ -1426,7 +1423,7 @@ h5 {
     z-index: 5;
     background-color: var(--color_secundario);
     transform: translateX(30%);
-    transition: transform 500ms cubic-bezier(0.76, 0, 0.24, 1) 0.5s;
+    transition: all 500ms cubic-bezier(0.76, 0, 0.24, 1) 0.5s;
     will-change: transform;
     align-items: center;
 }
@@ -1784,7 +1781,8 @@ h5 {
     height: 0;
     background-color: var(--color_secundario);
     z-index: 4;
-    transition: all 1000ms ease-in-out;
+    border-radius: 100%;
+    transition: all 500ms ease-in-out;
     transform: translate(-50%, -50%);
     align-items: center;
 }

@@ -1,0 +1,111 @@
+
+
+/* Estilo para el header */
+.article__header {
+    background-color: var(--color_detalle); /* Fondo oscuro para el encabezado */
+    color: var(--color_principal); /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+.article__title {
+    font-size: 2.5rem;
+}
+.content__link{
+    color: var(--color_secundario);
+}
+.article__author {
+    font-size: 1.2rem;
+}
+.fa-terminal{
+    font-size: 1.1rem;
+}
+
+.article__date {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Estilo para la introducción */
+.content__introduction {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 2rem 0;
+}
+
+/* Estilo para el índice */
+.content__index {
+    border-radius: 2rem;
+    width: 45%;
+    border: 1px solid var(--color_detalle);
+    list-style: none;
+    padding: 0 2rem;
+    margin: 2rem auto;
+}
+
+.index__introduction {
+    font-weight: bold;
+    color: #555;
+}
+
+.index__option {
+    margin: 1rem 0;
+}
+
+.option__text {
+    color: var(--color_secundario); /* Color azul para los enlaces del índice */
+    text-decoration: none;
+}
+.option__text:hover {
+    color: var(--color_detalle);
+}
+
+/* Estilo para las secciones del contenido */
+.content__section {
+    margin-bottom: 4rem;
+}
+
+.content__subtitle {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.content__paragraph {
+    line-height: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.content__console {
+    background-color: var(--color_secundario); 
+    color: var(--color_principal); 
+    font-family: 'Courier New', monospace; 
+    padding: 1rem; 
+    border-radius: 0.8rem; 
+    margin: 15px 0; 
+}
+
+.console__line {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo para el texto de la consola */
+.content__console span {
+    display: block;
+}
+
+/* Estilo para la consola de imagen */
+.content__imageContainer {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.content__image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
