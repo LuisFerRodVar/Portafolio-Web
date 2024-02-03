@@ -24,13 +24,13 @@ html {
 
 
 body {
-
+    display: flex;
     width: 100%;
-    height: auto;
+    height: 100vh;
     font-family: "Poppins", Helvetica, sans-serif;
     font-size: 1.5rem;
     color: var(--color_texto);
-    overflow: hidden;
+    overflow-x: hidden;
     background: url('../img/descarga.png') repeat 0 0;
     -webkit-animation: bg-scrolling-reverse 10s infinite;
     /* Safari 4+ */

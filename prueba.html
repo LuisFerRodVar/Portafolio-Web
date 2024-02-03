@@ -120,7 +120,7 @@
                     <h1 class="article__title">
                         Tutorial de Git/Github básico
                     </h1>
-                    
+
                     <small class="article__author">Luis Fernando Rodríguez</small>
                     <time class="article__date">01/02/2024</time>
                 </header>
@@ -207,8 +207,10 @@
                             "email@algo.com" con tu información:
                         </p>
                         <figure class="content__console">
-                            <span class="console__line"><i class="fa fa-terminal"></i> git config --global user.name "nombre"</span>
-                            <span class="console__line"><i class="fa fa-terminal"></i> git config --global user.email "tu@email.com"</span>
+                            <span class="console__line"><i class="fa fa-terminal"></i> git config --global user.name
+                                "nombre"</span>
+                            <span class="console__line"><i class="fa fa-terminal"></i> git config --global user.email
+                                "tu@email.com"</span>
                         </figure>
                         <p class="content__paragraph">
                             Es importante destacar que al utilizar Git con repositorios remotos, es posible que se te
@@ -265,7 +267,8 @@
                             breve comentario explicando los cambios realizados.
                         </p>
                         <figure class="content__console">
-                            <span class="console__line"><i class="fa fa-terminal"></i> git commit -m "Primer commit"</span>
+                            <span class="console__line"><i class="fa fa-terminal"></i> git commit -m "Primer
+                                commit"</span>
                         </figure>
                     </article>
                     <article class="content__section" id="section_6">
@@ -315,7 +318,8 @@
                             Ahora conecta el repositorio local con el remoto escribiendo el siguiente comando:
                         </p>
                         <figure class="content__console">
-                            <span class="console__line"><i class="fa fa-terminal"></i> git remote add origin URL-del-repositorio</span>
+                            <span class="console__line"><i class="fa fa-terminal"></i> git remote add origin
+                                URL-del-repositorio</span>
                         </figure>
                         <p class="content__paragraph">
                             Para subir los cambios a GitHub puede hacerlo utilizando el comando git push:
@@ -333,34 +337,39 @@
                             en la consola de una carpeta que preferiblemente se encuentre vacía:
                         </p>
                         <figure class="content__console">
-                            <span class="console__line"><i class="fa fa-terminal"></i> git clone URL-del-repositorio</span>
+                            <span class="console__line"><i class="fa fa-terminal"></i> git clone
+                                URL-del-repositorio</span>
                         </figure>
                         <p class="content__paragraph">
                             Para probar puede clonar el contenido del repositorio del tutorial de programación en Python
                             de la siguiente manera
                         </p>
                         <figure class="content__console">
-                            <span class="console__line"><i class="fa fa-terminal"></i> git clone URL-de mi repositorio</span>
+                            <span class="console__line"><i class="fa fa-terminal"></i> git clone URL-de mi
+                                repositorio</span>
                         </figure>
                         <p class="content__paragraph">
                             Crea una rama para trabajar
                         </p>
                         <figure class="content__console">
-                            <span class="console__line"><i class="fa fa-terminal"></i> git checkout -b nueva-funcionalidad</span>
+                            <span class="console__line"><i class="fa fa-terminal"></i> git checkout -b
+                                nueva-funcionalidad</span>
                         </figure>
                         <p class="content__paragraph">
                             Para realizar los cambios es igual que con Git en su versión local
                         </p>
                         <figure class="content__console">
                             <span class="console__line"><i class="fa fa-terminal"></i> git add .</span>
-                            <span class="console__line"><i class="fa fa-terminal"></i> git commit -m "Comentario de ejemplo"</span>
+                            <span class="console__line"><i class="fa fa-terminal"></i> git commit -m "Comentario de
+                                ejemplo"</span>
                         </figure>
                         <p class="content__paragraph">
                             El comando git add . sirve para agregar todo el contenido de la carpeta actual. Ahora puede
                             subir los cambios con el siguiente comando:
                         </p>
                         <figure class="content__console">
-                            <span class="console__line"><i class="fa fa-terminal"></i> git push origin nombre-de-la-rama .</span>
+                            <span class="console__line"><i class="fa fa-terminal"></i> git push origin nombre-de-la-rama
+                                .</span>
                         </figure>
                     </article>
 
@@ -390,6 +399,32 @@
             </section>
         </main>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtén todos los enlaces del índice
+            var enlacesIndice = document.querySelectorAll(".index__option a");
+
+            // Agrega un evento de clic a cada enlace del índice
+            enlacesIndice.forEach(function (enlace) {
+                enlace.addEventListener("click", function (event) {
+                    // Previene el comportamiento predeterminado del enlace
+                    event.preventDefault();
+
+                    // Obtiene el ID del objetivo del enlace
+                    var objetivoId = this.getAttribute("href").substring(1);
+
+                    // Obtiene el elemento objetivo
+                    var objetivo = document.getElementById(objetivoId);
+
+                    // Realiza el scroll suave al elemento objetivo
+                    objetivo.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
