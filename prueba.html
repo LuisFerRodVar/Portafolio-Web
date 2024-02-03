@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Portafolio Luis Fernando Rodríguez Vargas</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/scroll.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/fonts/poppins/poppins.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <script src="./assets/js/menu.js" defer></script>
+    <script src="./assets/js/transition.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!--Layout principal-->
+
+    <div class="layout">
+        <!--Barra lateral-->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                <!--Informacion general-->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="assets/img/default-user.jpeg" class="user-info__image"
+                            alt="Foto de perfil del usuario" />
+                    </div>
+                    <h2 class="user-info__name">Luis Rodríguez</h2>
+                    <h4 class="user-info__job">Desarrollador fulstack</h4>
+                </div>
+                <!--Menu de navegacion-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a class="menu__link--1 a menu__link" onclick="onRouteClick('a'); return false;">
+                                <i class="fa-solid fa-house-chimney menu__icon"></i>
+                                <span class="menu__overlay">Inicio</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link b menu__link--2"
+                                onclick="onRouteClick('b'); return false;">
+                                <i class="fa-solid fa-user-tie menu__icon"></i>
+
+                                <span class="menu__overlay">Sobre mi</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="curriculum.html" class="menu__link c menu__link--3"
+                                onclick="onRouteClick('c'); return false;">
+                                <i class="fa-solid fa-graduation-cap menu__icon"></i>
+                                <span class="menu__overlay">Curriculum</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link d menu__link--4"
+                                onclick="onRouteClick('d'); return false;">
+                                <i class="fa-solid fa-briefcase menu__icon"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a class="menu__link e menu__link--5 menu__link--active"
+                                onclick="onRouteClick('e'); return false;">
+                                <i class="fa-solid fa-book-bookmark menu__icon"></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link f menu__link--6"
+                                onclick="onRouteClick('f'); return false;">
+                                <i class="fa-solid fa-envelope menu__icon"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="user-info__user-link">
+                    <ul class="user-link__social">
+                        <li class="social__option">
+                            <a href="https://www.linkedin.com/in/luis-fernando-rodr%C3%ADguez-vargas-449221279/"
+                                class="social__link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="https://github.com/LuisFerRodVar" class="social__link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-info__buttons">
+                    <a href="#" class="user-info__btn">Descargar CV</a>
+                </div>
+
+                <footer class="user-info__footer">
+                    &copy; 2024
+                </footer>
+            </section>
+        </aside>
+
+        <!--Menu responsive-->
+        <div class="layout__menu-toggle">
+            <i class="menu__toggle-icon fa-solid fa-bars"></i>
+            <i class="menu__toggle-icon fa-solid fa-xmark"></i>
+        </div>
+        <main class="layout__content" id="page">
+
+            <section class="content__page content__article">
+                <div class="loader">
+                    <div class="loader__book"></div>
+                </div>
+                <header class="article__header">
+                    <h1 class="article__title">
+                        Tutorial de Git/Github básico
+                    </h1>
+                    <time class="article__date">01/02/2024</time>
+                    <small class="article__author">Luis Fernando Rodríguez</small>
+                </header>
+                <section class="article__content">
+                    <p class="content__introduction">
+                        Git y GitHub son herramientas fundamentales para cualquier desarrollador que busca gestionar el
+                        control de versiones y colaborar en proyectos de manera eficiente. En este artículo veremos
+                        conceptos básicos de Git y como utililizar Github para colaborar en proyectos.
+                    </p>
+                    <ul class="content__index">
+                        <span class="index__introduction">Contenido del artículo</span>
+                        <li class="index__option">
+                            <a href="#section_1" class="option__text">
+                                1. ¿Qué es Git y por qué es importante?
+                            </a>
+                        </li>
+                        <li class="index__option">
+                            <a href="#section_2" class="option__text">
+                                2. Instalación de Git
+                            </a>
+                        </li>
+                        <li class="index__option">
+                            <a href="#section_3" class="option__text">
+                                3. Configuración inicial de Git
+                            </a>
+                        </li>
+                        <li class="index__option">
+                            <a href="#section_4" class="option__text">
+                                4. Creación de un repositorio local
+                            </a>
+                        </li>
+                        <li class="index__option">
+                            <a href="#section_5" class="option__text">
+                                5. Primeros pasos con Git
+                            </a>
+                        </li>
+                        <li class="index__option">
+                            <a href="#section_6" class="option__text">
+                                6. Ramas en Git
+                            </a>
+                        </li>
+                        <li class="index__option">
+                            <a href="#section_7" class="option__text">
+                                7. Github y repositorios remotos
+                            </a>
+                        </li>
+                        <li class="index__option">
+                            <a href="#section_8" class="option__text">
+                                8. Colaboración en Github
+                            </a>
+                        </li>
+                        <li class="index__option">
+                            <a href="#section_conclusion" class="option__text">
+                                Conclusión
+                            </a>
+                        </li>
+                    </ul>
+                    <article class="content__section" id="section_1">
+                        <h2 class="content__subtitle">
+                            1. ¿Qué es Git y por qué es importante?
+                        </h2>
+                        <p class="content__paragraph">
+                            Git es un sistema de control de versiones que permite rastrear cambios en el código fuente
+                            durante el desarrollo de software. Es esencial para mantener un historial de versiones,
+                            revertir cambios y trabajar en colaboración con otros desarrolladores.
+                        </p>
+                    </article>
+                    <article class="content__section" id="section_2">
+                        <h2 class="content__subtitle">
+                            2. Instalación de Git
+                        </h2>
+                        <p class="content__paragraph">
+                            Antes de comenzar, asegúrate de tener Git instalado en tu máquina. Puedes descargarlo desde
+                            <a class="content__link" href="https://git-scm.com/" target="_blank">git-scm.com</a>. Sigue
+                            las instrucciones de instalación para tu sistema operativo.
+                        </p>
+                    </article>
+                    <article class="content__section" id="section_3">
+                        <h2 class="content__subtitle">
+                            3. Configuración inicial de Git
+                        </h2>
+                        <p class="content__paragraph">
+                            Abre tu terminal y ejecuta los siguientes comandos, reemplazando "nombre" y
+                            "email@algo.com" con tu información:
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git config --global user.name "nombre"</span>
+                            <span class="console__line">git config --global user.email "tu@email.com"</span>
+                        </figure>
+                        <p class="content__paragraph">
+                            Es importante destacar que al utilizar Git con repositorios remotos, es posible que se te
+                            solicite autenticación al realizar operaciones como clonar un repositorio o hacer push de
+                            cambios.
+                        </p>
+                        <p class="content__paragraph">
+                            La forma más sencilla de realizar esta autenticación es mediante el uso del navegador.
+                            Cuando Git solicite tus credenciales, simplemente abrirá tu navegador web predeterminado
+                            para que ingreses tu nombre de usuario y contraseña de la plataforma que estás utilizando,
+                            facilitando así el proceso de autenticación.
+                        </p>
+                    </article>
+                    <article class="content__section" id="section_4">
+                        <h2 class="content__subtitle">
+                            4. Creación de un repositorio local
+                        </h2>
+                        <p class="content__paragraph">
+                            Crea una nueva carpeta para tu proyecto y accede a ella desde la terminal, en la mayoría de
+                            sistemas operativos actuales es tan fácil como hacer click derecho sobre la carpeta e
+                            indicarle que desea abrirlo desde la terminal. Para inicializar un repositorio de Git en esa
+                            carpeta escribe el siguiente comando:
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git init</span>
+                        </figure>
+
+                    </article>
+                    <article class="content__section" id="section_5">
+                        <h2 class="content__subtitle">
+                            5. Primeros pasos con Git
+                        </h2>
+                        <p class="content__paragraph">
+                            Añade archivos al área de preparación con el siguiente comando:
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git add nombre-del-archivo</span>
+                        </figure>
+                        <p class="content__paragraph">
+                            Por ejemplo, en mi caso voy a agregar el archivo que tengo preparado para un tutorial sobre
+                            Python que voy a dar en este blog próximamente
+                        </p>
+                        <div class="content__imageContainer">
+                            <img class="content__image" />
+                        </div>
+                        <p class="content__paragraph">
+                            Entonces simplemente debo digitar el siguiente comando:
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git add tutorial.py</span>
+                        </figure>
+                        <p class="content__paragraph">
+                            Ahora es necesario realizar un commit para guardar los cambios, también hay que agregar un
+                            breve comentario explicando los cambios realizados.
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git commit -m "Primer commit"</span>
+                        </figure>
+                    </article>
+                    <article class="content__section" id="section_6">
+                        <h2 class="content__subtitle">
+                            6. Ramas en Git
+                        </h2>
+                        <p class="content__paragraph">
+                            En Git, las ramas son una característica poderosa que te permite trabajar en diferentes
+                            líneas de desarrollo de forma independiente. Cada rama representa una línea de tiempo
+                            separada, permitiéndote realizar cambios sin afectar la rama principal del proyecto. Esto es
+                            fundamental para el desarrollo colaborativo y la implementación de nuevas funciones o
+                            correcciones sin interrumpir el flujo principal del código.
+                        </p>
+                        <p class="content__paragraph">
+                            Para agregar una rama en git basta con escribir el siguiente comando en la terminal:
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git branch nueva-rama</span>
+                            <span class="console__line">git checkout nueva-rama</span>
+                        </figure>
+                        <p class="content__paragraph">
+                            El comando git checkout explicado muy a grandes razgos sirve para cambiar de rama a nivel
+                            local en git.
+                        </p>
+                    </article>
+                    <article class="content__section" id="section_7">
+                        <h2 class="content__subtitle">
+                            7. Github y repositorios remotos
+                        </h2>
+                        <p class="content__paragraph">
+                            ¿Qué es GitHub? Github es una plataforma basada en la web que utiliza el sistema de control
+                            de versiones Git. Aunque Git se centra en el control de versiones local y en el seguimiento
+                            de cambios en el código fuente, GitHub amplía esas capacidades al proporcionar un entorno
+                            colaborativo en línea para el desarrollo de software.
+                        </p>
+                        <p class="content__paragraph">
+                            Primero crea una cuenta en <a class="content__link" href="https://github.com/">GitHub</a> si
+                            aún no tiene.
+                        </p>
+                        <p class="content__paragraph">
+                            Crea un nuevo repositorio en GitHub.
+                        </p>
+                        <div class="content__imageContainer">
+                            <img class="content__image" />
+                        </div>
+                        <p class="content__paragraph">
+                            Ahora conecta el repositorio local con el remoto escribiendo el siguiente comando:
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git remote add origin URL-del-repositorio</span>
+                        </figure>
+                        <p class="content__paragraph">
+                            Para subir los cambios a GitHub puede hacerlo utilizando el comando git push:
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git push -u origin master</span>
+                        </figure>
+                    </article>
+                    <article class="content__section" id="section_8">
+                        <h2 class="content__subtitle">
+                            8. Colaboración en Github
+                        </h2>
+                        <p class="content__paragraph">
+                            Para clonar el contenido de un repositorio en Github basta con colocar el siguiente comando
+                            en la consola de una carpeta que preferiblemente se encuentre vacía:
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git clone URL-del-repositorio</span>
+                        </figure>
+                        <p class="content__paragraph">
+                            Para probar puede clonar el contenido del repositorio del tutorial de programación en Python
+                            de la siguiente manera
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git clone URL-de mi repositorio</span>
+                        </figure>
+                        <p class="content__paragraph">
+                            Crea una rama para trabajar
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git checkout -b nueva-funcionalidad</span>
+                        </figure>
+                        <p class="content__paragraph">
+                            Para realizar los cambios es igual que con Git en su versión local
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git add .</span>
+                            <span class="console__line">git commit -m "Comentario de ejemplo"</span>
+                        </figure>
+                        <p class="content__paragraph">
+                            El comando git add . sirve para agregar todo el contenido de la carpeta actual. Ahora puede
+                            subir los cambios con el siguiente comando:
+                        </p>
+                        <figure class="content__console">
+                            <span class="console__line">git push origin nombre-de-la-rama .</span>
+                        </figure>
+                    </article>
+
+                    <article class="content__section" id="section_conclusion">
+                        <h2 class="content__subtitle">
+                            Conclusión
+                        </h2>
+                        <p class="content__paragraph">
+                            ¡Felicidades! Ya tiene una comprensión básica de Git y GitHub. Estos conceptos son
+                            esenciales para cualquier desarrollador y te permitirán colaborar de manera efectiva en
+                            proyectos.
+                        </p>
+                        <p class="content__paragraph">
+                            Recuerde que esto nada más fue una pincelada de todo lo que Git/Github tiene para ofrecer.
+                            Puede buscar más información en otros recursos. Este fue el primer artículo que he hecho, la
+                            verdad me ha costado más tiempo del que me gustaría reconocer. Sin embargo me ha brindado
+                            mucha
+                            experiencia y los siguientes serán mucho más sencillos. Recuerde suscribirse a mi Newsletter
+                            donde estaré avisando cada vez que suba un nuevo artículo. Muchas gracias por leer.
+                        </p>
+
+                    </article>
+                </section>
+
+
+
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

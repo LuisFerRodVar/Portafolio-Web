@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <script src="assets/js/menu.js" defer></script>
     <script src="./assets/js/transition.js" defer></script>
+    <script src="./assets/js/blogAnimation.js"></script>
 
 </head>
 
@@ -40,41 +41,42 @@
                     <ul class="menu__list">
                         <li class="menu__option">
                             <a class="menu__link--1 a menu__link" onclick="onRouteClick('a'); return false;">
-                                <ion-icon class="menu__icon" name="home-outline"></ion-icon>
+                                <i class="fa-solid fa-house-chimney menu__icon"></i>
                                 <span class="menu__overlay">Inicio</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="sobre-mi.html" class="menu__link b menu__link--2"
                                 onclick="onRouteClick('b'); return false;">
-                                <ion-icon class="menu__icon" name="person-outline"></ion-icon>
+                                <i class="fa-solid fa-user-tie menu__icon"></i>
+
                                 <span class="menu__overlay">Sobre mi</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="curriculum.html" class="menu__link c menu__link--3"
                                 onclick="onRouteClick('c'); return false;">
-                                <ion-icon class="menu__icon" name="school-outline"></ion-icon>
+                                <i class="fa-solid fa-graduation-cap menu__icon"></i>
                                 <span class="menu__overlay">Curriculum</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="portafolio.html" class="menu__link d menu__link--4"
                                 onclick="onRouteClick('d'); return false;">
-                                <ion-icon class="menu__icon" name="briefcase-outline"></ion-icon>
+                                <i class="fa-solid fa-briefcase menu__icon"></i>
                                 <span class="menu__overlay">Portafolio</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a class="menu__link e menu__link--5 menu__link--active">
-                                <ion-icon class="menu__icon" name="newspaper"></ion-icon>
+                                <i class="fa-solid fa-book-bookmark menu__icon"></i>
                                 <span class="menu__overlay">Blog</span>
                             </a>
                         </li>
                         <li class="menu__option">
                             <a href="contacto.html" class="menu__link f menu__link--6"
                                 onclick="onRouteClick('f'); return false;">
-                                <ion-icon class="menu__icon" name="mail-outline"></ion-icon>
+                                <i class="fa-solid fa-envelope menu__icon"></i>
                                 <span class="menu__overlay">Contacto</span>
                             </a>
                         </li>
@@ -114,6 +116,8 @@
                 <div class="loader">
                     <span class="loader__book"></span>
                 </div>
+                <div class="mask" id="mask">
+                </div>
                 <header class="blog__header">
                     <h1 class="blog__title">
                         Blog
@@ -121,7 +125,28 @@
                 </header>
 
                 <section class="blog__articles">
-                    <article class="articles__article">
+                    <article class="articles__article" onclick="showMask(this,1)">
+                        <div class="article__top">
+                            <div class="article__category">Desarrollo</div>
+                            <a href="#" class="article__image-link">
+                                <div class="article__mask">
+                                    <img class="article__image" src="assets/img/articulo-1.jpg" />
+
+                                </div>
+                                <div class="article__logo">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="article__bottom">
+                            <time class="article__date" datetime="2023-08-30">30/08/2023</time>
+                            <a href="#" class="article__link">
+                                <h2 class="article__title">Tutorial de Github básico</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="articles__article" onclick="showMask(this,2)">
                         <div class="article__top">
                             <div class="article__category">Desarrollo</div>
                             <a href="#" class="article__image-link">
@@ -150,9 +175,6 @@
 
 
     </div>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
