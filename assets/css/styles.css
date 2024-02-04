@@ -361,7 +361,8 @@ h5 {
     justify-content: center;
 
 }
-.content__blog{
+
+.content__blog {
     overflow: hidden;
 }
 
@@ -381,7 +382,7 @@ h5 {
 .resume__title,
 .portafolio__title,
 .blog__title,
-.contact__title{
+.contact__title {
     font-size: 3.2rem;
     position: relative;
 
@@ -1740,7 +1741,7 @@ h5 {
     background-color: var(--color_principal);
     border-radius: 8px;
     box-shadow: 0 0 10px var(--color_detalle);
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin: 0.5rem;
     padding: 1rem;
@@ -1757,10 +1758,10 @@ h5 {
 
 
 .tecnologies__list:hover .tecnologies__item:hover {
-    transform:scale(1);
-    filter:blur(0px);
-    opacity:1;
-    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
 }
 
 .tecnologies__icon {
@@ -1775,6 +1776,7 @@ h5 {
     color: var(--color_texto);
     margin: 0;
 }
+
 .mask {
     position: relative;
     width: 0;
@@ -1785,4 +1787,31 @@ h5 {
     transition: all 500ms ease-in-out;
     transform: translate(-50%, -50%);
     align-items: center;
+}
+
+.article__imageContainer {
+    height: 20rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--color_detalle);
+}
+
+.article__image {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+.page__logoContainer {
+    text-align: center; /* Centra el logo en su contenedor */
+    background-color: var(--color_secundario);
+    border-radius: 10rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.page__logo {
+    width: 10rem; /* Ajusta el ancho del logo según tus necesidades */
+    height: auto; /* Mantiene la proporción al ajustar el ancho */
+   
+     /* Agrega sombra al logo */
+    /* Otros estilos según tus preferencias */
 }

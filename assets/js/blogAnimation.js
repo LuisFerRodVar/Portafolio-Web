@@ -34,7 +34,7 @@ function showMask(element, destiny) {
         
         setTimeout(() =>{
             
-            window.location.href = './articles/prueba.html'
+            window.location.href = './articles/tutorial-git.html'
         },500)
     }
 }

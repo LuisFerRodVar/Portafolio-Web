@@ -24,7 +24,7 @@
 
 .article__date {
     font-size: 1.2rem;
-    color: #ddd;
+    color: var(--color_principal);
 }
 
 /* Estilo para la introducción */
