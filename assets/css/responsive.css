@@ -26,6 +26,23 @@
     }
 }
 @media(max-width: 1060px){
+    .carousel__slide{
+        figure {
+            flex-direction: column;
+        }
+        figcaption {
+            width: 100%;
+
+        }
+    
+    }
+
+    .content__index{
+        width: 100%;
+    }
+    .content__console{
+        width: 100%;
+    }
     .menu__overlay{
         background-color: transparent;
     }

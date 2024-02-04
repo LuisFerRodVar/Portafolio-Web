@@ -13,6 +13,7 @@
 }
 .content__link{
     color: var(--color_secundario);
+    transition: all 200ms;
 }
 .article__author {
     font-size: 1.2rem;
@@ -56,6 +57,7 @@
 .option__text {
     color: var(--color_secundario); /* Color azul para los enlaces del índice */
     text-decoration: none;
+    transition: all 200ms ease-in-out;
 }
 .option__text:hover {
     color: var(--color_detalle);
@@ -78,12 +80,13 @@
 
 
 .content__console {
+    width: 80%;
     background-color: var(--color_secundario); 
     color: var(--color_principal); 
     font-family: 'Courier New', monospace; 
     padding: 1rem; 
     border-radius: 0.8rem; 
-    margin: 15px 0; 
+    margin: 1.5rem 0; 
 }
 
 .console__line {

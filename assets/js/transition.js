@@ -15,46 +15,49 @@ const startTransition = () => {
 };
 
 
-const onRouteClick = (route) => {
+const onRouteClick = (route,article) => {
     if (appRoot.dataset.route === route) return;
 	appRoot.dataset.route = route;
     endTransition();
-    
+    let back = "";
+    if(article){
+        back = "../"
+    }
     let aside = document.querySelector(".layout__aside");
     aside.classList.remove("layout__aside--visible");
     if(route == 'a'){
         setTimeout(() => {
-            window.location.href= "index.html"
+            window.location.href= back+ "index.html"
             
         }, 1000);
 
     }
     if(route == 'b'){
         setTimeout(() => {
-            window.location.href= "sobre-mi.html"
+            window.location.href= back+ "sobre-mi.html"
         }, 1000);
     }
     if(route == 'c'){
         setTimeout(() => {
-            window.location.href= "curriculum.html"
+            window.location.href= back+ "curriculum.html"
         }, 1000);
         
     }
     if(route == 'd'){
         setTimeout(() => {
-            window.location.href= "portafolio.html"
+            window.location.href= back+ "portafolio.html"
         }, 1000);
         
     }
     if(route == 'e'){
         setTimeout(() => {
-            window.location.href= "blog.html"
+            window.location.href=back+ "blog.html"
         }, 1000);
         
     }
     if(route == 'f'){
         setTimeout(() => {
-            window.location.href= "contacto.html"
+            window.location.href=back+ "contacto.html"
         }, 1000);
         
     }
