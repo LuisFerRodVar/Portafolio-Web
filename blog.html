@@ -15,6 +15,7 @@
     <script src="assets/js/menu.js" defer></script>
     <script src="./assets/js/transition.js" defer></script>
     <script src="./assets/js/blogAnimation.js"></script>
+
 </head>
 
 <body>
@@ -145,18 +146,27 @@
 
 
                 </section>
+                <div class="overlay" id="overlay"></div>
+
+                <div class="popup" id="popup">
+                    <i class="fa-solid fa-x"></i>
+                    <span class="popup-close" onclick="closePopup()">&times;</span>
+                    <p id="popup-message"></p>
+                </div>
                 <div class="blog__newsletter">
                     <div id="mc_embed_shell">
                         <div id="mc_embed_signup">
                             <form
                                 action="https://github.us13.list-manage.com/subscribe/post?u=237de7393d206ea603dae6e90&amp;id=2638bfe03e&amp;f_id=008114e4f0"
                                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                                class="validate" target="_self" novalidate="">
+                                onsubmit="return validateForm()" class="validate" target="_self" novalidate="">
                                 <div id="mc_embed_signup_scroll">
-                                    <span class="newsletter__title"><i class="newsletter__icon fas fa-paper-plane"></i>Suscríbete a mi boletín para mantenerte al tanto de cualquier actualización</span>
+                                    <span class="newsletter__title"><i
+                                            class="newsletter__icon fas fa-paper-plane"></i>Suscríbete a mi boletín para
+                                        mantenerte al tanto de cualquier actualización</span>
                                     <div class="mc-field-group">
-                                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL"
-                                            required="" value="" placeholder="Email">
+                                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required
+                                            value="" placeholder="Email">
                                         <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
                                             value="Suscribirse">
                                         <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
@@ -181,6 +191,36 @@
 
 
     </div>
+    <script>
+        function validateForm() {
+            var email = document.getElementById('mce-EMAIL').value;
+
+            if (email == "") {
+                showPopup("Por favor, ingresa tu dirección de correo electrónico.");
+                return false;
+            }
+
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showPopup("Por favor, ingresa un correo electrónico válido.");
+                return false;
+            }
+
+            return true;
+        }
+
+        function showPopup(message) {
+            document.getElementById('popup-message').innerText = message;
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
 </body>
+
 
 </html>
