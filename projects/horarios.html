@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Gestor de horarios</title>
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.1.2-web/css/all.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/scroll.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/fonts/poppins/poppins.css" />
+    <link rel="stylesheet" href="../assets/css/blogstyles.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+
+    <script src="../assets/js/menu.js" defer></script>
+    <script src="../assets/js/transition.js" defer></script>
+</head>
+
+<body>
+    <!--Layout principal-->
+
+    <div class="layout">
+        <!--Barra lateral-->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                <!--Informacion general-->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="../assets/img/default-user.jpeg" class="user-info__image"
+                            alt="Foto de perfil del usuario" />
+                    </div>
+                    <h2 class="user-info__name">Luis Rodríguez</h2>
+                    <h4 class="user-info__job">Desarrollador fulstack</h4>
+                </div>
+                <!--Menu de navegacion-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a class="menu__link--1 a menu__link" onclick="onRouteClick('a',true); return false;">
+                                <i class="fa-solid fa-house-chimney menu__icon"></i>
+                                <span class="menu__overlay">Inicio</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="../sobre-mi.html" class="menu__link b menu__link--2"
+                                onclick="onRouteClick('b',true); return false;">
+                                <i class="fa-solid fa-user-tie menu__icon"></i>
+
+                                <span class="menu__overlay">Sobre mi</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="../curriculum.html" class="menu__link c menu__link--3"
+                                onclick="onRouteClick('c',true); return false;">
+                                <i class="fa-solid fa-graduation-cap menu__icon"></i>
+                                <span class="menu__overlay">Curriculum</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="../portafolio.html" class="menu__link d menu__link--4 menu__link--active"
+                                onclick="onRouteClick('d',true); return false;">
+                                <i class="fa-solid fa-briefcase menu__icon"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="../blog.html" class="menu__link e menu__link--5"
+                                onclick="onRouteClick('e',true); return false;">
+                                <i class="fa-solid fa-book-bookmark menu__icon"></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="../contacto.html" class="menu__link f menu__link--6"
+                                onclick="onRouteClick('f',true); return false;">
+                                <i class="fa-solid fa-envelope menu__icon"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="user-info__user-link">
+                    <ul class="user-link__social">
+                        <li class="social__option">
+                            <a href="https://www.linkedin.com/in/luis-fernando-rodr%C3%ADguez-vargas-449221279/"
+                                class="social__link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="https://github.com/LuisFerRodVar" class="social__link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-info__buttons">
+                    <a href="#" class="user-info__btn">Descargar CV</a>
+                </div>
+
+                <footer class="user-info__footer">
+                    &copy; 2024
+                </footer>
+            </section>
+        </aside>
+
+        <!--Menu responsive-->
+        <div class="layout__menu-toggle">
+            <i class="menu__toggle-icon fa-solid fa-bars"></i>
+            <i class="menu__toggle-icon fa-solid fa-xmark"></i>
+        </div>
+        <main class="layout__content" id="page">
+
+            <section class="content__page content__article">
+                <div class="loader">
+                    <div class="loader__book"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

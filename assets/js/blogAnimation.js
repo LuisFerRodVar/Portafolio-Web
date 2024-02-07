@@ -1,40 +1,47 @@
-function showMask(element, destiny) {
-    // Obtener la máscara y layout__content
-    const mask = document.getElementById('mask');
-    const contentBlog = document.querySelector('.content__blog');
-    const articles = document.querySelectorAll('.articles__article');
-    const title = document.querySelector('.blog__header');
-    const menu = document.querySelector('.menu__list');
-    const options = document.querySelectorAll('.menu__option i')
-
-    
-    const rect = element.getBoundingClientRect();
-    const contentRect = contentBlog.getBoundingClientRect();
-    const x = rect.left - contentRect.left + rect.width / 2;
-    const y = rect.top - contentRect.top + rect.height / 2;
-
-    title.style.opacity = '0';
-    mask.style.left = x + 'px';
-    mask.style.top = y + 'px';
-
-    // Ocultar el resto de elementos dentro de .content__page
-    articles.forEach(article => {
-        article.style.opacity = '0';
-    });
-    // Ajustar la máscara al tamaño inicial (cero)
-    mask.style.width = '0';
-    mask.style.height = '0';
-
-    // Mostrar y animar la máscara al tamaño de .content__blog
-    mask.style.width = "250%";
-    mask.style.height = "250%";
-    if(destiny == 1){
 
 
-        
-        setTimeout(() =>{
+
+
+
+const onRouteClickArticle = (route) => {
+    endTransition();
+    let aside = document.querySelector(".layout__aside");
+    aside.classList.remove("layout__aside--visible");
+    if(route == 'a'){
+        setTimeout(() => {
+            window.location.href=  "articles/tutorial-git.html";
             
-            window.location.href = './articles/tutorial-git.html'
-        },500)
+        }, 1000);
+
     }
-}
+    if(route == 'b'){
+        setTimeout(() => {
+            window.location.href= back+ "sobre-mi.html"
+        }, 1000);
+    }
+    if(route == 'c'){
+        setTimeout(() => {
+            window.location.href= back+ "curriculum.html"
+        }, 1000);
+        
+    }
+    if(route == 'd'){
+        setTimeout(() => {
+            window.location.href= back+ "portafolio.html"
+        }, 1000);
+        
+    }
+    if(route == 'e'){
+        setTimeout(() => {
+            window.location.href=back+ "blog.html"
+        }, 1000);
+        
+    }
+    if(route == 'f'){
+        setTimeout(() => {
+            window.location.href=back+ "contacto.html"
+        }, 1000);
+        
+    }
+	
+};
