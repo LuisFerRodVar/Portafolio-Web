@@ -122,29 +122,8 @@
                 </header>
 
                 <section class="blog__articles">
-                    <article class="articles__article" onclick="onRouteClickArticle('a')">
-                        <div class="article__top">
-                            <div class="article__category">Desarrollo</div>
-                            <a  class="article__image-link">
-                                <div class="article__mask">
-                                    <img class="article__image" src="assets/img/miniatura-1.jpeg" />
-
-                                </div>
-                                <div class="article__logo">
-                                    <i class="fa-brands fa-github"></i>
-                                </div>
-                            </a>
-
-                        </div>
-                        <div class="article__bottom">
-                            <time class="article__date" datetime="2024-02-01">01/02/2024</time>
-                            <a class="article__link">
-                                <h2 class="article__title">Tutorial de Git/Github básico</h2>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="articles__article" onclick="onRouteClickArticle('a')">
-                        <div class="article__top">
+                    <article class="articles__article">
+                        <div class="article__top" onclick="onRouteClickArticle('a')">
                             <div class="article__category">Desarrollo</div>
                             <a class="article__image-link">
                                 <div class="article__mask">
@@ -157,17 +136,17 @@
                             </a>
 
                         </div>
-                        <div class="article__bottom">
+                        <div class="article__bottom" onclick="onRouteClickArticle('a')">
                             <time class="article__date" datetime="2024-02-01">01/02/2024</time>
                             <a class="article__link">
                                 <h2 class="article__title">Tutorial de Git/Github básico</h2>
                             </a>
                         </div>
                     </article>
-                    <article class="articles__article" onclick="onRouteClickArticle('a')">
-                        <div class="article__top">
+                    <article class="articles__article">
+                        <div class="article__top" onclick="onRouteClickArticle('a')">
                             <div class="article__category">Desarrollo</div>
-                            <a  class="article__image-link">
+                            <a class="article__image-link">
                                 <div class="article__mask">
                                     <img class="article__image" src="assets/img/miniatura-1.jpeg" />
 
@@ -178,17 +157,17 @@
                             </a>
 
                         </div>
-                        <div class="article__bottom">
+                        <div class="article__bottom" onclick="onRouteClickArticle('a')">
                             <time class="article__date" datetime="2024-02-01">01/02/2024</time>
-                            <a  class="article__link">
+                            <a class="article__link">
                                 <h2 class="article__title">Tutorial de Git/Github básico</h2>
                             </a>
                         </div>
                     </article>
-                    <article class="articles__article" onclick="onRouteClickArticle('a')">
-                        <div class="article__top">
+                    <article class="articles__article">
+                        <div class="article__top" onclick="onRouteClickArticle('a')">
                             <div class="article__category">Desarrollo</div>
-                            <a  class="article__image-link">
+                            <a class="article__image-link">
                                 <div class="article__mask">
                                     <img class="article__image" src="assets/img/miniatura-1.jpeg" />
 
@@ -199,9 +178,30 @@
                             </a>
 
                         </div>
-                        <div class="article__bottom">
+                        <div class="article__bottom"  onclick="onRouteClickArticle('a')">
                             <time class="article__date" datetime="2024-02-01">01/02/2024</time>
-                            <a  class="article__link">
+                            <a class="article__link">
+                                <h2 class="article__title">Tutorial de Git/Github básico</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="articles__article">
+                        <div class="article__top"  onclick="onRouteClickArticle('a')">
+                            <div class="article__category">Desarrollo</div>
+                            <a class="article__image-link">
+                                <div class="article__mask">
+                                    <img class="article__image" src="assets/img/miniatura-1.jpeg" />
+
+                                </div>
+                                <div class="article__logo">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="article__bottom"  onclick="onRouteClickArticle('a')">
+                            <time class="article__date" datetime="2024-02-01">01/02/2024</time>
+                            <a class="article__link">
                                 <h2 class="article__title">Tutorial de Git/Github básico</h2>
                             </a>
                         </div>
@@ -226,13 +226,17 @@
                                 <div id="mc_embed_signup_scroll">
                                     <div class="newsletter__title-container">
                                         <span class="newsletter__title"><i
-                                            class="newsletter__icon fas fa-paper-plane"></i>Suscríbete para mantenerte al día</span>
+                                                class="newsletter__icon fas fa-paper-plane"></i>Suscríbete para
+                                            mantenerte al día</span>
 
                                     </div>
-                                    
+
                                     <div class="mc-field-group">
-                                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required
-                                            value="" placeholder="Email">
+                                        <div class="form__group form__group-blog">
+                                            <input type="email" name="EMAIL" class="required email form__input"
+                                                id="mce-EMAIL" required value="" placeholder="Email">
+                                            <label for="mce-EMAIL" class="form__label">Email</label>
+                                        </div>
                                         <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
                                             value="Suscribirse">
                                         <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>

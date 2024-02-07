@@ -455,6 +455,7 @@ h5 {
 .prices__header,
 .extra__header,
 .resume__subheader {
+    text-align: center;
     display: inline-block;
     padding-right: 1.2rem;
     position: relative;
@@ -661,6 +662,7 @@ h5 {
     border-radius: 3rem;
     padding: 1.2rem 3.1rem;
     transition: all 300ms ease-in-out;
+    cursor: pointer;
 
 }
 
@@ -904,6 +906,7 @@ h5 {
     color: var(--color_principal);
     border: 2px solid var(--color_secundario);
     transition: all 300ms ease-in-out;
+    cursor: default;
 }
 
 .knowledges__option:hover {
@@ -1119,7 +1122,7 @@ h5 {
     padding: 0 1.5rem;
     padding-bottom: 3.5rem;
     transition: all 300ms ease-in-out;
-    cursor: pointer;
+
 }
 
 .article__top {
@@ -1127,6 +1130,7 @@ h5 {
     overflow: hidden;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
+    cursor: pointer;
 }
 
 .article__category {
@@ -1202,6 +1206,7 @@ h5 {
     padding-top: 1.5rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    cursor: pointer;
 }
 
 .article__date {
@@ -1484,7 +1489,9 @@ h5 {
 }
 
 .personal-info__container {
+    display: flex;
     flex-basis: 45%;
+    margin: 0 auto;
     align-items: center;
 
 
@@ -1666,6 +1673,7 @@ h5 {
 
     figcaption {
         align-self: flex-end;
+        font-weight: bold;
         padding: 20px 20px 0 20px;
         flex: 0 0 auto;
         width: 25%;
@@ -1777,6 +1785,7 @@ h5 {
     top: 50px;
     left: 50%;
     transition: all 300ms ease-in-out;
+    cursor: default;
 }
 .tecnologies__list:hover .tecnologies__item:hover .tecnologies__text{
     opacity: 1;
@@ -1821,12 +1830,7 @@ h5 {
 
 .page__logo {
     width: 10rem;
-    /* Ajusta el ancho del logo según tus necesidades */
     height: auto;
-    /* Mantiene la proporción al ajustar el ancho */
-
-    /* Agrega sombra al logo */
-    /* Otros estilos según tus preferencias */
 }
 
 .newsletter__icon {
@@ -1846,7 +1850,6 @@ h5 {
 .blog__newsletter {
     max-width: 100%;
     margin: 0 auto;
-    padding: 2rem;
 }
 
 
@@ -1887,6 +1890,7 @@ h5 {
 }
 
 .button {
+    height: 60%;
     flex-basis: 30%;
     cursor: pointer;
     padding: 1rem 3rem;
@@ -1942,4 +1946,8 @@ h5 {
     top: 5px;
     right: 5px;
     cursor: pointer;
+}
+.form__group-blog{
+    flex-basis: 70%;
+    margin-bottom: 0;
 }
