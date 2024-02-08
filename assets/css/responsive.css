@@ -311,12 +311,15 @@
 }
 
 @media(max-width: 480px) {
+    .article__mask{
+        height: 16.5rem;
+    }
     .email{
-        flex-basis: 60%;
+        flex-basis: 70%;
 
     }
     .button{
-        flex-basis: 40%;
+        flex-basis: 30%;
     }
 
     
