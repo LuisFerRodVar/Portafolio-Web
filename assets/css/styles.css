@@ -1201,6 +1201,7 @@ h5 {
 .article__bottom {
     margin: 0;
     padding: 2.1rem;
+    height: 10rem;
     border: 0.1rem solid var(--color_detalle);
     border-top: 0;
     padding-top: 1.5rem;
@@ -1807,11 +1808,6 @@ h5 {
     align-items: center;
 }
 
-.article__imageContainer {
-    height: 20rem;
-    overflow: hidden;
-    box-shadow: 0 4px 8px var(--color_detalle);
-}
 
 .article__image {
     max-width: 100%;

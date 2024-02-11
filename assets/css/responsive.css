@@ -33,6 +33,10 @@
 
 @media(max-width: 1060px) {
 
+    .menu__list{
+        border: none;
+    }
+
     .content__page--about,
     .content__resume,
     .content__portafolio,
@@ -228,6 +232,7 @@
 }
 
 @media(max-width: 800px) {
+
     .reviews__container {
         flex-direction: column;
     }

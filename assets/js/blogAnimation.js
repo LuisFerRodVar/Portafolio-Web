@@ -16,7 +16,7 @@ const onRouteClickArticle = (route) => {
     }
     if(route == 'b'){
         setTimeout(() => {
-            window.location.href= back+ "sobre-mi.html"
+            window.location.href= "articles/primer-lenguaje.html"
         }, 1000);
     }
     if(route == 'c'){
