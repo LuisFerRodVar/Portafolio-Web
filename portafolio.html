@@ -14,6 +14,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <script src="assets/js/menu.js" defer></script>
     <script src="./assets/js/transition.js" defer></script>
+    <script src="./assets/js/portfolioCarousel.js" defer></script>
 </head>
 
 <body>
@@ -113,53 +114,84 @@
                 <header class="porfafolio__header">
                     <h1 class="portafolio__title">Portafolio</h1>
                 </header>
-                <nav class="portafolio__navbar">
-                    <ul class="portafolio__menu">
-                        <li class="portafolio__option portafolio__option--active">
-                            <a href="#" class="portafolio__link">
-                                Todo
-                            </a>
-                        </li>
-                        <li class="portafolio__option">
-                            <a href="#" class="portafolio__link">
-                                .NET core
-                            </a>
-                        </li>
-
-                    </ul>
-                </nav>
-                <section class="portafolio__gallery">
-                    <figure class="gallery__item">
-                        <div class="gallery__container-image">
-                            <a href="./projects/horarios.html" class="gallery__link">
-                                <img src="./assets/img/galeria-1.jpg" class="gallery__image" />
-                                <ul class="item__categories">
-                                    <li class="item__category">
-                                        <span class="gallery__category gallery__category--1">.NET core</span>
-                                    </li>
-                                    <li class="item__category">
-                                        <span class="gallery__category gallery__category--2">React</span>
-                                    </li>
-                                    <li class="item__category">
-                                        <span class="gallery__category gallery__category--3">HTML/CSS</span>
-                                    </li>
-                                    <li class="item__category">
-                                        <span class="gallery__category gallery__category--4">SqlServer</span>
-                                    </li>
-                                    <li class="item__category">
-                                        <span class="gallery__category gallery__category--5">C#</span>
-                                    </li>
-                                </ul>
-                                <i class="gallery__icon fa-solid fa-code-commit"></i>
-                            </a>
+                <div class="carousel-containerp">
+                    <button class="carousel-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+                    <div class="carousel-slidesp">
+                        <div class="carousel-slidep">
+                            <div class="wrap animate pop">
+                                <div class="overlay__portfolio">
+                                    <div class="overlay-content animate slide-left delay-2">
+                                        <h1 class="animate slide-left pop delay-4">Proyecto 1</h1>
+                                        <p class="animate slide-left pop delay-5"
+                                            style="color: white; margin-bottom: 2.5rem;"><em>Dinosaurio</em>
+                                        </p>
+                                    </div>
+                                    <div class="image-content animate slide delay-5"></div>
+                                    <div class="dots animate">
+                                        <div class="dot animate slide-up delay-6"></div>
+                                        <div class="dot animate slide-up delay-7"></div>
+                                        <div class="dot animate slide-up delay-8"></div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorem vitae
+                                        saepe quam deserunt, error quis aspernatur earum obcaecati nam facilis tempora
+                                        itaque assumenda dignissimos suscipit eum delectus! Accusamus, laudantium.</p>
+                                </div>
+                            </div>
                         </div>
+                        <div class="carousel-slidep">
+                            <div class="wrap animate pop">
+                                <div class="overlay__portfolio">
+                                    <div class="overlay-content animate slide-left delay-2">
+                                        <h1 class="animate slide-left pop delay-4">Proyecto 2</h1>
+                                        <p class="animate slide-left pop delay-5"
+                                            style="color: white; margin-bottom: 2.5rem;"><em>Palomas</em></p>
+                                    </div>
+                                    <div class="image-content animate slide delay-5"></div>
+                                    <div class="dots animate">
+                                        <div class="dot animate slide-up delay-6"></div>
+                                        <div class="dot animate slide-up delay-7"></div>
+                                        <div class="dot animate slide-up delay-8"></div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aliquid quo
+                                        quisquam. Distinctio obcaecati est delectus possimus quas aspernatur asperiores
+                                        fuga vero dolores dolor! Esse quam ipsum ipsam culpa vitae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slidep">
+                            <div class="wrap animate pop">
+                                <div class="overlay__portfolio">
+                                    <div class="overlay-content animate slide-left delay-2">
+                                        <h1 class="animate slide-left pop delay-4">Proyecto 3</h1>
+                                        <p class="animate slide-left pop delay-5"
+                                            style="color: white; margin-bottom: 2.5rem;"><em>Geckos</em></p>
+                                    </div>
+                                    <div class="image-content animate slide delay-5"></div>
+                                    <div class="dots animate">
+                                        <div class="dot animate slide-up delay-6"></div>
+                                        <div class="dot animate slide-up delay-7"></div>
+                                        <div class="dot animate slide-up delay-8"></div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum accusamus earum
+                                        quis eum incidunt eaque amet facilis magnam dolor tenetur? Iusto quo sed
+                                        repudiandae ducimus modi, incidunt repellat iste reiciendis!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next-btn" onclick="nextSlide()">&#10095;</button>
+                </div>
 
-                        <figcaption class="gallery__title">Gestor de horarios</figcaption>
-                    </figure>
 
 
 
-                </section>
+            </section>
             </section>
         </main>
 

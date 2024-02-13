@@ -32,6 +32,9 @@
 }
 
 @media(max-width: 1060px) {
+    .wrap{
+        height: 80%;
+    }
 
     .menu__list{
         border: none;
